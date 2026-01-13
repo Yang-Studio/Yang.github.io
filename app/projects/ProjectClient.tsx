@@ -15,7 +15,7 @@ export default function ProjectClient({ project }: { project: Project }) {
   const isVideo = project.results.media?.endsWith('.mp4')
   const gallery = projectAssets[project.slug] ?? []
   const reelSrc = project.reel ?? (project.results.media?.endsWith('.mp4') ? project.results.media : undefined)
-  const reelIsDrivePreview = Boolean(reelSrc) && reelSrc.includes('drive.google.com/file/d/') && reelSrc.includes('/preview')
+  const reelIsDrivePreview = !!reelSrc && reelSrc?.includes("drive.google.com/file/d/") && reelSrc?.includes("/preview");
   const reelIsVideo = Boolean(reelSrc && !reelIsDrivePreview && (reelSrc.endsWith('.mp4') || project.reel))
   const downloadHref =
     project.download ??
