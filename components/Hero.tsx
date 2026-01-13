@@ -16,9 +16,9 @@ const HERO_STATS = [
 ]
 
 const HERO_GALLERY = [
-  { src: '/images/lumen-orchard.jpg', alt: 'Lumen Orchard installation' },
-  { src: '/images/circuit-drift.jpg', alt: 'Circuit Drift prototype cockpit' },
-  { src: '/images/astral-loom.jpg', alt: 'Astral Loom fabric simulation' },
+  { src: 'https://drive.google.com/thumbnail?id=15LqVQCsOw_E80VFA-82sT1C8w-BO8uid&sz=w2000', alt: 'Bubono Bumperland' },
+  { src: 'https://drive.google.com/thumbnail?id=1rM2DaDsjBCWoBnQQHyHr1QwCFBAgr0Pv&sz=w2000', alt: 'ShanHe' },
+  { src: 'https://drive.google.com/thumbnail?id=1v86EXKi8t6SSmLyGXKRfPfuIkhMjn0tm&sz=w2000', alt: 'Ink' },
 ]
 
 export default function Hero() {
